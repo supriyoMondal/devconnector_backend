@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification failed</title>
+    <style>
+        body {
+            background: #c1c1c1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1f79c2;
+            list-style: none;
+            padding: 2rem 2rem;
+        }
+
+        h1 {
+            font-weight: 400;
+            margin: 1rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            border: 1 px solid #1f79c2;
+            padding: .4rem .8rem;
+            background: #1f79c2;
+            color: #fff;
+        }
+
+        h3 {
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>verification failed</h1>
+    <h1>Try To log-in again to get a new verification token.</h1>
+    <h3>
+        <% if(typeof msg != undefined && msg != null) {%>
+        <%= msg %>
+        <% }  %>
+    </h3>
+</body>
+
+</html>

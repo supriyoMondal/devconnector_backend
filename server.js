@@ -6,9 +6,11 @@ if (process.env.NODE_ENV != 'production') {
 
 const app = express();
 app.use(express.json());
+//set view engine
+app.set('view engine', 'ejs');
 connectDB();
 app.get('/', (req, res) => {
-    res.send("hello");
+    res.render('index');
 })
 //register user route
 app.use('/user', require('./routes/user'));
