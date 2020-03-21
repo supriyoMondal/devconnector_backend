@@ -10,6 +10,10 @@ connectDB();
 app.get('/', (req, res) => {
     res.send("hello");
 })
+//register user route
+app.use('/user', require('./routes/user'));
+//auth user route
+app.use('/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 5000;
 
